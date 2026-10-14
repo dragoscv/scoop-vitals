@@ -1,6 +1,6 @@
 {
   "##": "Template. The release workflow fills version, url and hash from the published release and SHA256SUMS.txt, then pushes the result to dragoscv/scoop-vitals as bucket/vitals.json. Scoop does not run the NSIS installer: 7-Zip unpacks it (the #/dl.7z suffix), which gives a portable copy with no Program Files entry, no service and no uninstaller registration. See packaging/winget/README.md for the other channels.",
-  "version": "0.9.0-beta.1",
+  "version": "1.0.0",
   "description": "A modern, fast system monitor and task manager for Windows.",
   "homepage": "https://vitals.dragoscatalin.ro",
   "license": "MIT",
@@ -10,12 +10,12 @@
   ],
   "architecture": {
     "64bit": {
-      "url": "https://github.com/dragoscv/vitals/releases/download/v0.9.0-beta.1/Vitals_0.9.0-beta.1_x64-setup.exe#/dl.7z",
-      "hash": "a50491cca9d2bb2e2fa726bb3b9980b8e1bcf8a2975bdef9e595ee4fb2a45cd8"
+      "url": "https://github.com/dragoscv/vitals/releases/download/v1.0.0/Vitals_1.0.0_x64-setup.exe#/dl.7z",
+      "hash": "35894940da865bc76804a525defec60c01f702ab5e86e92c1d3bb9c30c14cca4"
     },
     "arm64": {
-      "url": "https://github.com/dragoscv/vitals/releases/download/v0.9.0-beta.1/Vitals_0.9.0-beta.1_arm64-setup.exe#/dl.7z",
-      "hash": "61d512ee5ba5485ed2297b21d05a79df9704091d53fd17099b3bcf6cd866c914"
+      "url": "https://github.com/dragoscv/vitals/releases/download/v1.0.0/Vitals_1.0.0_arm64-setup.exe#/dl.7z",
+      "hash": "730a9fd8aba4b029ba69d4ab3e1dce559cfaea03757dee2cd5eac6209210439a"
     }
   },
   "pre_install": [
