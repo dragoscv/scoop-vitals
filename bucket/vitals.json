@@ -1,21 +1,22 @@
 {
   "##": "Template. The release workflow fills version, url and hash from the published release and SHA256SUMS.txt, then pushes the result to dragoscv/scoop-vitals as bucket/vitals.json. Scoop does not run the NSIS installer: 7-Zip unpacks it (the #/dl.7z suffix), which gives a portable copy with no Program Files entry, no service and no uninstaller registration. See packaging/winget/README.md for the other channels.",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "A modern, fast system monitor and task manager for Windows.",
   "homepage": "https://vitals.dragoscatalin.ro",
   "license": "MIT",
   "notes": [
     "Vitals is installed as a portable copy. Settings live in %APPDATA%\\Vitals and survive 'scoop uninstall'.",
-    "Update with 'scoop update vitals'. The app's own updater installs the full per-machine version instead, so prefer Scoop for updates."
+    "Update with 'scoop update vitals'. The app's own updater installs the full per-machine version instead, so prefer Scoop for updates.",
+    "This package is the desktop app only. The 'vitals' command line is a separate download: vitals-cli_<version>_<arch>.zip, from the same GitHub release (it is not inside the installer yet)."
   ],
   "architecture": {
     "64bit": {
-      "url": "https://github.com/dragoscv/vitals/releases/download/v1.2.0/Vitals_1.2.0_x64-setup.exe#/dl.7z",
-      "hash": "12382023f980204567517b1f7baebc86f3243a4b555a5cf1868d3b59e3d35840"
+      "url": "https://github.com/dragoscv/vitals/releases/download/v1.3.0/Vitals_1.3.0_x64-setup.exe#/dl.7z",
+      "hash": "fa52394069a0d2c59b23a575d33fbbed60dbe82a9d5c4402daeaa7c2eae38e25"
     },
     "arm64": {
-      "url": "https://github.com/dragoscv/vitals/releases/download/v1.2.0/Vitals_1.2.0_arm64-setup.exe#/dl.7z",
-      "hash": "7709d90c4184dbc9c963b94d45e6581829837ea020fba3b561449c7260c0eb3b"
+      "url": "https://github.com/dragoscv/vitals/releases/download/v1.3.0/Vitals_1.3.0_arm64-setup.exe#/dl.7z",
+      "hash": "5e865d4f8793cc60a9c964982b0e6003810ae96dea2991e178acbd7c1eb65d0c"
     }
   },
   "pre_install": [
